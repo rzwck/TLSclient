@@ -437,7 +437,7 @@ def strtonum(string):
 
 def numtostr(n):
     hexnum = hex(n)[2:]
-    if len(hexnum) % 2 != 0:
+    if hexnum[-1] == 'L':
     	hexnum = hexnum[:-1]
     return str(binascii.unhexlify(hexnum))
 """ ################################# END Formatting Functions ################################# """
