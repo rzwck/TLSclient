@@ -436,10 +436,11 @@ def strtonum(string):
 	return result
 
 def numtostr(n):
-    hexnum = hex(n)[2:]
-    if hexnum[-1] == 'L':
-    	hexnum = hexnum[:-1]
-    return str(binascii.unhexlify(hexnum))
+	hexnum = hex(n)[2:]
+	if hexnum[-1] == 'L':
+		hexnum = hexnum[:-1]
+	return str(binascii.unhexlify(hexnum))
+	
 """ ################################# END Formatting Functions ################################# """
 
 """ Handshaking Function """
